@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="clientRest">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Client For RESTFull API">
+        <title>Client</title>
+        <link href="res/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="res/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+        <script src="res/js/angular.js" ></script>
+        <script src="res/js/angular-sanitize.min.js" ></script>
+        <script src="app/controllers.js"></script>
+        <script src="app/directives.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid orange">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    client Rest
+                                </a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav nav-right">
+
+                                </ul>
+                            </div>
+                            <div class="navbar navbar-form">
+                                <connect></connect>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <d-user-form></d-user-form>
+            <!--
+<div class="row">
+<div class="col-md-12">  
+<h1>TIC/WEB RESTFull Client</h1>
+<p>Here you can choose your road to contact:</p><div class="row" ng-controller="addUserController as auCtrl">
+<div class="col-md-8 col-md-offset-2">
+<form action="http://localhost:3000/user" method="post" class="form-group">
+<legend>Create a new user on POST /user api's route</legend>
+<label >Lastname</label>
+<input class="form-control" type="text" name="Lastname"  />
+<label >Firstname</label>
+<input class="form-control" type="text" name="Firstname"  />
+<label >email</label>
+<input class="form-control" type="text" name="Email"  />
+<label >password</label>
+<input class="form-control" type="text" name="Password" />
+<label >role</label>
+<input class="form-control" type="text" name="Role" />
+<input type="submit" value="send user"/>
+</form>
+</div>
+<div class="col-md-2">
+<a ng-click="auCtrl.getUsers()" class="btn-primary">Send GET on /user</a>
+<input type="number" ng-model="id" />
+</div>
+</div>
+</div>
+</div>
+-->
+        </div>
+        <script src="res/js/jquery.js" ></script>
+        <script src="res/js/bootstrap.js" ></script>
+    </body>
+</html> 
