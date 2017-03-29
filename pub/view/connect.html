@@ -1,12 +1,15 @@
 <div class="row" ng-controller="authenticationController as authCtrl">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-3">
+        <button class="btn btn-danger" ng-click="authCtrl.logout()">Unset HTTP Basic credentials</button>
+    </div>
+    <div class="col-md-6">
         <form class="form-group">
-            <legend>Authentication</legend>
+            <legend>Authentication: POST on /auth (Basic HTTP Authorisation header managed by client)</legend>
             <label>email</label>
             <input class="form-control" type="text" ng-model="authUser.email"/>
             <label>password</label>
-            <input class="form-control" type="email" ng-model="authUser.password" />
-            <button type="button" ng-click="authCtrl.authenticate()" />
+            <input class="form-control" type="text" ng-model="authUser.password" />
+            <button class="btn btn-primary" ng-click="authCtrl.authenticate()">Ask For HTTP Basic Auth</button>
         </form>
     </div>
 </div>

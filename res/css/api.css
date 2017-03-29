@@ -1,0 +1,13 @@
+.getZone{
+    display: inline-block;
+    width: 4em;
+}
+.overflow{
+    max-height: 40em; 
+    overflow: scroll;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
